@@ -86,12 +86,10 @@ export default function App() {
             Recording {index + 1} - {recordingLine.duration}
           </Text>
           <Button
-            style={styles.button}
             onPress={() => playSound(recordingLine.sound)}
             title="Play"
           />
           <Button
-            style={styles.button}
             onPress={() => deleteRecording(index)}
             title="Delete"
           />
